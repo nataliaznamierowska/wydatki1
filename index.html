@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domowy budżet</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Domowy budżet</h1>
+
+      <div class="addItemSection">
+        <h2>Przychody</h2>
+        <form id="addForm">
+          <label for="income-name">Nazwa:</label>
+          <input type="text" id="income-name" /><br>
+          <label for="income-amount">Kwota:</label>
+          <input type="number" id="income-amount" step="0.01" /><br>
+          <button id="addIncomeButton" type="button">Dodaj</button>
+
+        </form>
+
+        <h2>Wydatki</h2>
+        <form id="addForm">
+          <label for="expense-name">Nazwa:</label>
+          <input type="text" id="expense-name" /><br>
+          <label for="expense-amount">Kwota:</label>
+          <input type="number" id="expense-amount" step="0.01" /><br>
+          <button id="addExpenseButton" type="button">Dodaj</button>
+        </form>
+      </div>
+
+      <h2>Dostępny bilans</h2>
+      <p id="available-balance">0.00 PLN</p>
+
+      <h2>Lista przychodów</h2>
+      <ul class="list" id="income-list"></ul>
+
+      <h3>Suma przychodów</h3>
+      <p id="total-income">0.00 PLN</p>
+
+      <h2>Lista wydatków</h2>
+      <ul class="list" id="expense-list"></ul>
+      <h3>Suma wydatków</h3>
+      <p id="total-expense">0.00 PLN</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
